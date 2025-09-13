@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy birthday, my sweet baby💐</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    color: #fff;
+    text-shadow: 2px 2px 4px #b36b00;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 0.5em 0 2em 0;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255,111,97,0.4);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff3b2e;
+  }
+
+  /* Message styles */
+  .love-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #b36b00;
+    background-color: rgba(179, 107, 0, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    z-index: 10000;
+    max-width: 500px;
+    line-height: 1.5;
+  }
+
+  .love-message.show {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <h1>Happy birthday, my sweet baby💐</h1>
+  <p>Di hari spesial ini, aku harap kamu di beri berkat dan rahmat, perlindungan, dan sukacita oleh Tuhan, aku hanya ingin kamu tau kalo kamu itu sangat berharga di hidupku. terima kasih udah kasih aku kebahagiaan, warna, dan cinta yang tak pernah habis. aku harap harapanmu semua terkabulkan oleh Tuhan, dan langkahmu selalu dimudahkan oleh Tuhan. aku berjanji akan selalu mencintaimu selalu, dan ada di sisimu selalu. I Love you so much, and this is the only thing i can give to you, my baby.</p>
+  <button id="thankYouBtn">Thank you so much</button>
+
+  <div id="loveMessage" class="love-message">
+    With pleasure, baby, and i hope that you understand how much i love you.
+  </div>
+
+  <script>
+    document.getElementById('thankYouBtn').addEventListener('click', () => {
+      const message = document.getElementById('loveMessage');
+      
+      // Show the message
+      message.classList.add('show');
+      
+      // Hide the message after 10 seconds
+      setTimeout(() => {
+        message.classList.remove('show');
+      }, 10000);
+    });
+  </script>
+</body>
+</html>
